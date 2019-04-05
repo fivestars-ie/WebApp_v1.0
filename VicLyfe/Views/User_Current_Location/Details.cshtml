@@ -1,0 +1,83 @@
+﻿@model VicLyfe.Models.User_Current_Location
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User_Current_Location</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Filter_6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Filter_6)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Time }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
