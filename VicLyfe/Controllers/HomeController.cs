@@ -13,6 +13,20 @@ namespace VicLyfe.Controllers
             return View();
         }
 
+        public ActionResult ViewPage1()
+        {
+            ViewBag.Message = "Your ViewPage1.";
+
+            return View();
+        }
+
+        public ActionResult ViewPage2()
+        {
+            ViewBag.Message = "Your ViewPage2.";
+
+            return View();
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
