@@ -202,6 +202,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ViewPage1.cshtml" />
     <Content Include="Views\Home\ViewPage2.cshtml" />
+    <Content Include="Views\Home\ViewPage3.cshtml" />
+    <Content Include="Views\Home\PRPath.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

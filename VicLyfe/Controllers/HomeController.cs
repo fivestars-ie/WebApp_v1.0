@@ -27,6 +27,18 @@ namespace VicLyfe.Controllers
             return View();
         }
 
+        public ActionResult ViewPage3()
+        {
+            ViewBag.Message = "Your ViewPage3.";
+
+            return View();
+        }
+        public ActionResult PRPath()
+        {
+            ViewBag.Message = "Your PR Suggestions.";
+
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
