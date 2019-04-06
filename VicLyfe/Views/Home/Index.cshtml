@@ -2,13 +2,149 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>VicLyfe</h1>
-    <p class="lead">Monash nui 2019 S1 IE team FiveStars(TA21)</p>
-    <p> Team member:</p>
-    <p>  Jiewen Deng (MBIS)</p>
-    <p>  Liulin Tao (MBIS)</p>
-    <p>  Achmad Ginanjar (MDS)</p>
-    <p>  Rajkiran Basavaraj Renuka (MIT)</p>
-    <p>  Shuo Wang (MIT)</p>
-</div>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%;
+        line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .responsive {
+        
+        min-height: 100%;
+        width:100%;
+        margin-top:5px;
+    }
+
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+<html>
+<body>
+    <div class="responsive">
+        <img src="~/Content/home-page.jpg"  class="responsive"/>
+        <p class="w3-center w3-large" margin-top="25px" color="light grey">
+           Are you a recent graduate looking for PR but short of points ? 
+            Consider Regional Victoria for your Career.
+             
+         </p>
+    </div>
+
+    <div class="w3-container" style="padding:64px 16px" id="about">
+        <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
+        <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
+        <div class="w3-row-padding w3-center" style="margin-top:50px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Jobs</p>
+                <p>One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have 
+                   plenty of resources to offer.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Cost and Quality of Living</p>
+                <p>Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you 
+                   can enjoy the same benefits at a much reasonable price.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Hospitals</p>
+                <p>Equal number of Health care centers are in Regional Victoria to. You do not have to worry about not having access
+                   to emergency health services. Explore Hospitals around you in a click !</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Safety and Security</p>
+                <p>A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
+                   about any emergency incidents. Victorian Police Services are always with you.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding:32px 16px">
+        <div class="w3-row-padding">
+            <div class="w3-col m6">
+                <h3>We know why Regional Victoria is Better than Melbourne.</h3>
+                <p>Do not make false assumptions. Compare and find out yourself.</p>
+                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Data Visuals</a></p>
+                <ul>
+                    <li>@Html.ActionLink("Click Here", "ViewPage1", "Home")</li>
+                </ul>
+            </div>
+            <div class="w3-col m6">
+                <img class="w3-image w3-round-large" src="~/Content/1-1024x978.png" alt="Graphs" width="700" height="394">
+            </div>
+        </div>
+    </div>
+    <!-- Work Section -->
+    <div class="w3-container" style="padding:64px 16px" id="work">
+        <h3 class="w3-center">Your Life is Waiting Here !</h3>
+        <p class="w3-center w3-large">Check out some of the places you can settle in.</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="col-lg-6">
+                <img src="~/Content/Geelong.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+            </div>
+            <div class="col-lg-6">
+                <img src="~/Content/Ballarat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+            </div>
+            
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="col-lg-6">
+                <img src="~/Content/Bendigo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+            </div>
+            <div class="col-lg-6">
+                <img src="~/Content/BAWBAW.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <ul>
+            <li background-color="grey">@Html.ActionLink("Go Back to the Top", "Index", "Home")</li>
+        </ul>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
+
