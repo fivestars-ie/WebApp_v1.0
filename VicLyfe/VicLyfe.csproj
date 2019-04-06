@@ -156,27 +156,12 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RegionsController.cs" />
-    <Compile Include="Controllers\User_Current_LocationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Crime.cs" />
-    <Compile Include="Models\Hospital.cs" />
-    <Compile Include="Models\Job.cs" />
-    <Compile Include="Models\Model1.cs" />
-    <Compile Include="Models\Park.cs" />
-    <Compile Include="Models\Region.cs" />
-    <Compile Include="Models\Rent.cs" />
-    <Compile Include="Models\Training_Institutions.cs" />
-    <Compile Include="Models\User_Current_Location.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Iteration1.mdf" />
-    <Content Include="App_Data\Iteration1_log.ldf">
-      <DependentUpon>Iteration1.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -217,18 +202,10 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\ViewPage1.cshtml" />
     <Content Include="Views\Home\ViewPage2.cshtml" />
-    <Content Include="Views\User_Current_Location\Create.cshtml" />
-    <Content Include="Views\User_Current_Location\Delete.cshtml" />
-    <Content Include="Views\User_Current_Location\Details.cshtml" />
-    <Content Include="Views\User_Current_Location\Edit.cshtml" />
-    <Content Include="Views\User_Current_Location\Index.cshtml" />
-    <Content Include="Views\Regions\Create.cshtml" />
-    <Content Include="Views\Regions\Delete.cshtml" />
-    <Content Include="Views\Regions\Details.cshtml" />
-    <Content Include="Views\Regions\Edit.cshtml" />
-    <Content Include="Views\Regions\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
