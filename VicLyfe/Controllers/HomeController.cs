@@ -13,26 +13,6 @@ namespace VicLyfe.Controllers
             return View();
         }
 
-        public ActionResult ViewPage1()
-        {
-            ViewBag.Message = "Your ViewPage1.";
-
-            return View();
-        }
-
-        public ActionResult ViewPage2()
-        {
-            ViewBag.Message = "Your ViewPage2.";
-
-            return View();
-        }
-
-        public ActionResult ViewPage3()
-        {
-            ViewBag.Message = "Your ViewPage3.";
-
-            return View();
-        }
         public ActionResult PRPath()
         {
             ViewBag.Message = "Your PR Suggestions.";
@@ -52,5 +32,6 @@ namespace VicLyfe.Controllers
 
             return View();
         }
+
     }
 }

@@ -76,6 +76,7 @@ create table [dbo].[Crimes] (
 PRIMARY KEY (Crime_id),
 foreign key(Suburb_name) references Region(Suburb_name));
 
+
 drop table dbo.Crimes;
 
 bulk insert [dbo].[Crimes]
@@ -135,3 +136,16 @@ from 'C:\Users\User\Desktop\Data\Park.csv'
 with (fieldterminator = ',', rowterminator = '\n')
 go
 
+
+create table [dbo].[Rent_int] (
+[Rent_id] nvarchar(50),
+[Suburb_name] nvarchar(50),
+[unit_type] nvarchar(max),
+[price] int,
+[year] nvarchar(max),
+[month] nvarchar(max),
+PRIMARY KEY (Rent_id),
+foreign key(Suburb_name) references Region(Suburb_name));
+
+
+update [dbo].[Hospital] set Postcode = 'VIC' + Postcode;

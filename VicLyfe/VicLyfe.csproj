@@ -156,6 +156,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\VP3Controller.cs" />
+    <Compile Include="Controllers\VP2Controller.cs" />
+    <Compile Include="Controllers\VP1Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -227,10 +230,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\ViewPage1.cshtml" />
-    <Content Include="Views\Home\ViewPage2.cshtml" />
-    <Content Include="Views\Home\ViewPage3.cshtml" />
+    <Content Include="Views\VP1\ViewPage1.cshtml" />
+    <Content Include="Views\VP2\ViewPage2.cshtml" />
+    <Content Include="Views\VP3\ViewPage3.cshtml" />
     <Content Include="Views\Home\PRPath.cshtml" />
+    <Content Include="Views\VP1\HospitalVP1.cshtml" />
+    <Content Include="Views\VP1\ParkVP1.cshtml" />
+    <Content Include="Views\VP1\RTOVP1.cshtml" />
+    <Content Include="Views\VP2\HospitalVP2.cshtml" />
+    <Content Include="Views\VP2\ParkVP2.cshtml" />
+    <Content Include="Views\VP2\RTOVP2.cshtml" />
+    <Content Include="Views\VP3\RTOVP3.cshtml" />
+    <Content Include="Views\VP3\HospitalVP3.cshtml" />
+    <Content Include="Views\VP3\ParkVP3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

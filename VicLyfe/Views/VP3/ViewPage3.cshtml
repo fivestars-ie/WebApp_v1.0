@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "Select a City";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<p></p>
+<p></p>
+<p>Here is the bar chart shows crime, rent and job offers</p>
+<p> Please select a city/ cities from right!</p>
+
+
+<div class='tableauPlaceholder' id='viz1554619465530' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZX&#47;ZX9M3PPJR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;ZX9M3PPJR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ZX&#47;ZX9M3PPJR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+<script type='text/javascript'>var divElement = document.getElementById('viz1554619465530'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+
+
+
+<div class="w3-container" style="padding:64px 16px" id="about">
+    <h3 class="w3-center">More Information</h3>
+    <div class="w3-row-padding w3-center" style="margin-top:50px">
+        <div class="w3-quarter">
+            <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+            <p class="w3-large">Hospital</p>
+            <p>
+                Click here to view the Map of hospital in Victoria.
+            </p>
+            <ul>
+                <li>@Html.ActionLink("View Hospital", "HospitalVP3", "VP3")</li>
+            </ul>
+        </div>
+
+        <div class="w3-quarter">
+            <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Park</p>
+            <p>
+                Click here to view the Map of park in Victoria.
+            </p>
+
+            <ul>
+                <li>@Html.ActionLink("View Park", "ParkVP3", "VP3")</li>
+            </ul>
+        </div>
+
+        <div class="w3-quarter">
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">RTO</p>
+            <p>
+                Click here to view the Map of registered training organisation(RTO) in Victoria.
+            </p>
+            <ul>
+                <li>@Html.ActionLink("View RTO", "RTOVP3", "VP3")</li>
+            </ul>
+        </div>
+    </div>
+</div>
