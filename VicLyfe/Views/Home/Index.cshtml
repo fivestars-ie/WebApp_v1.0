@@ -3,115 +3,137 @@
 }
 
 
+
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    body, h1, h2, h3, h4, h5, h6 {
-        font-family: "Raleway", sans-serif
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Oswald"
     }
 
-    body, html {
-        height: 100%;
-        line-height: 1.8;
-    }
-
-    /* Full height image header */
-    .responsive {
-        
-        min-height: 100%;
-        width:100%;
-        margin-top:5px;
-    }
-
-    .w3-bar .w3-button {
-        padding: 16px;
+    body {
+        font-family: "Open Sans"
     }
 </style>
 <html>
-<body>
-    <div class="responsive">
-        <img src="~/Content/home-page.jpg"  class="responsive"/>
-        <p class="w3-center w3-large" margin-top="25px" color="light grey">
-           Are you a recent graduate looking for PR but short of points ? 
-            Consider Regional Victoria for your Career. Check out our site to know more.
-             
-         </p>
+<body class="w3-light-grey">
+
+
+    <!-- w3-content defines a container for fixed size centered content,
+    and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>VicLyfe - A new beginning</b></h1>
+            <h6>Regional Victoria <span class="w3-tag">The place to be</span></h6>
+        </header>
+
+        <!-- Image header -->
+        <header class="w3-display-container w3-wide" id="home">
+            <img class="w3-image" src="~/Content/DSC_6931.jpg" alt="Fashion Blog" width="1600" height="1060">
+            <div class="w3-display-left w3-padding-large">
+                <h1 class="w3-text-white">VicLyfe, For Graduates</h1>
+                <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Moving to Regional Victoria</b></h1>
+                <h6>
+                    <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">
+                        <ul>
+                            <li background-color="grey">@Html.ActionLink("Know More", "About", "Home")</li>
+                        </ul>
+                    </button>
+                </h6>
+            </div>
+        </header>
+        <div class="w3-container" style="padding:32px 16px" id="about">
+            <p class="responsive" style="text-align:center; margin-top:10px;margin-bottom:20px;">
+                Today’s world is smaller than it has ever been. Places that once seemed too far away to ever imagine travelling 
+                there now feel within reach, offering new and exciting opportunities to begin life afresh.
+                And so it is for the many thousands of people who come from lands afar to make Australia their new home.
+                Regional Victoria is hugely active in attracting and supporting migrants in setting up their new lives. From help 
+                with the many visa options available, to the provision of useful resources such as those linked below, regional cities
+                and shires offer invaluable assistance to make the process of moving 
+                into their region from overseas as smooth and successful as possible.
+            </p>
+
+
+            <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
+            <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
+            <div class="w3-row-padding w3-center" style="margin-top:50px">
+                <div class="w3-quarter">
+                    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                    <p class="w3-large">Jobs</p>
+                    <p>
+                        One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have
+                        plenty of resources to offer.
+                    </p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Cost and Quality of Living</p>
+                    <p>
+                        Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you
+                        can enjoy the same benefits at a much reasonable price.
+                    </p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Hospitals</p>
+                    <p>
+                        Equal number of Health care centers are in Regional Victoria to. You do not have to worry about not having access
+                        to emergency health services. Explore Hospitals around you in a click !
+                    </p>
+                </div>
+                <div class="w3-quarter">
+                    <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                    <p class="w3-large">Safety and Security</p>
+                    <p>
+                        A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
+                        about any emergency incidents. Victorian Police Services are always with you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Promo Section - "We know design" -->
+        <div class="w3-container w3-light-grey" style="padding:32px 16px">
+            <div class="w3-row-padding">
+                <div class="w3-col m6">
+                    <h3>We know why Regional Victoria is Better than Melbourne.</h3>
+                    <p>Do not make false assumptions. Compare and find out yourself.</p>
+                    <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Data Visuals</a></p>
+                    <ul>
+                        <li>@Html.ActionLink("Click Here", "ViewPage1", "Home")</li>
+                    </ul>
+                </div>
+                <div class="w3-col m6">
+                    <img class="w3-image w3-round-large" src="~/Content/1-1024x978.png" alt="Graphs" width="700" height="394">
+                </div>
+            </div>
+        </div>
+
+        <!-- Inspiration -->
+        <div class="w3-white w3-margin">
+            <div class="w3-container w3-padding w3-black">
+                <h4>Inspiration</h4>
+            </div>
+            <div class="w3-row-padding w3-white">
+                <div class="w3-col s6">
+                    <p><img src="~/Content/Ballarat.jpg" alt="Jeans" style="width:100%"></p>
+                    <p><img src="~/Content/Bendigo.jpg" alt="Jeans" style="width:100%"></p>
+                </div>
+                <div class="w3-col s6">
+                    <p><img src="~/Content/Geelong.jpg" alt="Men in Hats" style="width:100%" class="w3-grayscale"></p>
+                    <p><img src="~/Content/BAWBAW.jpg" alt="Jeans" style="width:100%"></p>
+                </div>
+            </div>
+        </div>
+        <hr>
     </div>
 
-    <div class="w3-container" style="padding:64px 16px" id="about">
-        <h3 class="w3-center">What Regional Victoria Offers for you ?</h3>
-        <p class="w3-center w3-large">A Never ending satisfaction just a few minutes away from you.</p>
-        <div class="w3-row-padding w3-center" style="margin-top:50px">
-            <div class="w3-quarter">
-                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-                <p class="w3-large">Jobs</p>
-                <p>One of the biggest concerns of anyone planning to move is that of employment. You are not alone here ! We have 
-                   plenty of resources to offer.</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Cost and Quality of Living</p>
-                <p>Enjor superior quality of life with affordable cost of housing and other facilities. Do not pay more when you 
-                   can enjoy the same benefits at a much reasonable price.</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Hospitals</p>
-                <p>Equal number of Health care centers are in Regional Victoria to. You do not have to worry about not having access
-                   to emergency health services. Explore Hospitals around you in a click !</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-                <p class="w3-large">Safety and Security</p>
-                <p>A wonderful place to live and build your career with very low crime rate and stress free life. Do not have to worry
-                   about any emergency incidents. Victorian Police Services are always with you.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Promo Section - "We know design" -->
-    <div class="w3-container w3-light-grey" style="padding:32px 16px">
-        <div class="w3-row-padding">
-            <div class="w3-col m6">
-                <h3>We know why Regional Victoria is Better than Melbourne.</h3>
-                <p>Do not make false assumptions. Compare and find out yourself.</p>
-                <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Data Visuals</a></p>
-                <ul>
-                    <li>@Html.ActionLink("Click Here", "ViewPage1", "Home")</li>
-                </ul>
-            </div>
-            <div class="w3-col m6">
-                <img class="w3-image w3-round-large" src="~/Content/1-1024x978.png" alt="Graphs" width="700" height="394">
-            </div>
-        </div>
-    </div>
-    <!-- Work Section -->
-    <div class="w3-container" style="padding:64px 16px" id="work">
-        <h3 class="w3-center">Your Life is Waiting Here !</h3>
-        <p class="w3-center w3-large">Check out some of the places you can settle in.</p>
-
-        <div class="w3-row-padding" style="margin-top:64px">
-            <div class="col-lg-6">
-                <img src="~/Content/Geelong.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-            </div>
-            <div class="col-lg-6">
-                <img src="~/Content/Ballarat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-            </div>
-            
-        </div>
-
-        <div class="w3-row-padding w3-section">
-            <div class="col-lg-6">
-                <img src="~/Content/Bendigo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-            </div>
-            <div class="col-lg-6">
-                <img src="~/Content/BAWBAW.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-            </div>
-            
-        </div>
-    </div>
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
         <ul>
@@ -127,24 +149,27 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
-        var mySidebar = document.getElementById("mySidebar");
 
-        function w3_open() {
-            if (mySidebar.style.display === 'block') {
-                mySidebar.style.display = 'none';
+
+    <script>
+        // Toggle between hiding and showing blog replies/comments
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
             } else {
-                mySidebar.style.display = 'block';
+                x.className = x.className.replace(" w3-show", "");
             }
         }
 
-        // Close the sidebar with the close button
-        function w3_close() {
-            mySidebar.style.display = "none";
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
         }
     </script>
 
 </body>
 </html>
+
 
