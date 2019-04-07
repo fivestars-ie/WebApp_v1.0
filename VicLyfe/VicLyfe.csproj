@@ -163,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\1-1024x978.png" />
+    <Content Include="Content\20151118_regionalvictoria.png" />
     <Content Include="Content\Ballarat.jpg" />
     <Content Include="Content\BAWBAW.jpg" />
     <Content Include="Content\Bendigo.jpg" />
@@ -180,11 +181,16 @@
     <Content Include="Content\City7.png" />
     <Content Include="Content\City8.png" />
     <Content Include="Content\City9.png" />
+    <Content Include="Content\cost-of-living.jpg" />
     <Content Include="Content\Cover-image-e1503633884892-1000x501c.jpg" />
     <Content Include="Content\Geelong.jpg" />
     <Content Include="Content\home-page.jpg" />
+    <Content Include="Content\Hospital.png" />
+    <Content Include="Content\Hospitals_link.jpg" />
     <Content Include="Content\imagesY9DPTHX2.jpg" />
+    <Content Include="Content\Jobs-link.jpg" />
     <Content Include="Content\map-of-victoria-australia-s-guide-and-gippsland.jpg" />
+    <Content Include="Content\PR.jpg" />
     <Content Include="Content\R1.png" />
     <Content Include="Content\R2.png" />
     <Content Include="Content\R3.png" />
