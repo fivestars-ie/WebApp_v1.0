@@ -11,7 +11,7 @@ namespace VicLyfe.Controllers
 
         public ActionResult ViewPage2()
         {
-            ViewBag.Message = "View compere of different Regional Areas!";
+            ViewBag.Message = "Comparison of different Regional Areas in Victoria in terms of Crime, Jobs and Rent";
 
             return View();
         }

@@ -11,7 +11,7 @@ namespace VicLyfe.Controllers
 
         public ActionResult ViewPage1()
         {
-            ViewBag.Message = "View compare of Metropolitan and Reginal Areas!";
+            ViewBag.Message = "View comparison of Metropolitan and Regional Areas";
 
             return View();
         }
