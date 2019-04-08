@@ -250,6 +250,7 @@
     <Content Include="Views\VP3\RTOVP3.cshtml" />
     <Content Include="Views\VP3\HospitalVP3.cshtml" />
     <Content Include="Views\VP3\ParkVP3.cshtml" />
+    <Content Include="Views\VP3\ParkRTOVP3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

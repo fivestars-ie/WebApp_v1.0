@@ -1,0 +1,1 @@
+﻿update  [dbo].[Hospital] set Postcode = substring(Postcode,2,5);
