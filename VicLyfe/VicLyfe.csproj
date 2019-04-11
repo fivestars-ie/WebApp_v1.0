@@ -241,16 +241,6 @@
     <Content Include="Views\VP2\ViewPage2.cshtml" />
     <Content Include="Views\VP3\ViewPage3.cshtml" />
     <Content Include="Views\Home\PRPath.cshtml" />
-    <Content Include="Views\VP1\HospitalVP1.cshtml" />
-    <Content Include="Views\VP1\ParkVP1.cshtml" />
-    <Content Include="Views\VP1\RTOVP1.cshtml" />
-    <Content Include="Views\VP2\HospitalVP2.cshtml" />
-    <Content Include="Views\VP2\ParkVP2.cshtml" />
-    <Content Include="Views\VP2\RTOVP2.cshtml" />
-    <Content Include="Views\VP3\RTOVP3.cshtml" />
-    <Content Include="Views\VP3\HospitalVP3.cshtml" />
-    <Content Include="Views\VP3\ParkVP3.cshtml" />
-    <Content Include="Views\VP3\ParkRTOVP3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

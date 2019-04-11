@@ -15,27 +15,5 @@ namespace VicLyfe.Controllers
 
             return View();
         }
-
-        public ActionResult HospitalVP3()
-        {
-            return View();
-        }
-
-        public ActionResult ParkVP3()
-        {
-            return View();
-        }
-
-        public ActionResult RTOVP3()
-        {
-            return View();
-        }
-
-        public ActionResult ParkRTOVP3()
-        {
-            return View();
-        }
-
-
     }
 }
