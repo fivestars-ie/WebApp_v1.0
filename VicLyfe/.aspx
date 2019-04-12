@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="VicLyfe.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind=".aspx.cs" Inherits="VicLyfe.Login" %>
 
 <!DOCTYPE html>
 
